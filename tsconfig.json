@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/atoms/whatsapp.js", "components/atoms/sunIcon.js", "components/atoms/moonIcon.js", "components/atoms/linkdl.js", "components/atoms/instagram.js", "components/atoms/github.js", "components/atoms/Button.js", "pages/_app.js", "pages/index.js"],
   "exclude": ["node_modules"]
 }

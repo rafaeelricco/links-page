@@ -1,16 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit !important;
 }
-
-* {
-  box-sizing: border-box;
+.bg {
+  background-image: url('https://res.cloudinary.com/dnqiosdb6/image/upload/v1655419548/profilePicture/BlurComponent_tbe2zt.webp');
+  background-position: -16rem -8rem;
+  background-blend-mode: color;
+  height: 100vh;
+  width: 100vw;
+}
+.Container {
+  display: grid;
+  justify-items: center;
+}
+.message {
+  display: grid;
+  justify-items: center;
+  margin: 2rem 0 2rem 0;
+}
+.buttons {
+  display: grid;
+  grid-gap: 0.618rem;
+  justify-items: center;
+}
+.icons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 0.8rem;
+  margin: 1rem 0rem 0.618rem 0;
+}
+.copy {
+  display: grid;
+  justify-items: center;
 }
