@@ -14,7 +14,7 @@ import { Linkdl } from '../components/atoms/linkdl'
 export default function Home() {
   const darkMode = useDarkMode(false)
   return (
-    <>
+    <div>
       <Head>
         <title>Rafael Ricco | Links</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -161,6 +161,6 @@ export default function Home() {
           gtag('config', 'G-Q6TP8E3QJL');
         `}
       </Script>
-    </>
+    </div>
   )
 }
