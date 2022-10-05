@@ -81,7 +81,7 @@ export default function Home() {
                 <Linkdl />
               </a>
               <a
-                href="https://www.instagram.com/rafaelricco.io/?hl=pt-br"
+                href="https://www.instagram.com/ricco.dev/?hl=pt-br"
                 target="_blank"
                 rel="noreferrer"
               >
