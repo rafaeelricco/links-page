@@ -43,7 +43,7 @@ export default function Home() {
               }}
             />
             <Avatar
-              src="https://res.cloudinary.com/dnqiosdb6/image/upload/v1655416580/profilePicture/Artboard_1_hppvyv_khsmix.webp"
+              src="/images/profile.png"
               color="gradient"
               bordered
               zoomed
@@ -91,7 +91,6 @@ export default function Home() {
                 <WhatsApp />
               </a>
             </div>
-
             <div className="message">
               <Text
                 size={24}
@@ -111,25 +110,6 @@ export default function Home() {
                 Sinta-se a vontade para acessar meus projetos.
               </Text>
             </div>
-            {/* <div className="buttons">
-              <a target="_blank" href="http://wa.link/no53kg" rel="noreferrer">
-                <CustomButton text="Solicitar orçamento"></CustomButton>
-              </a>
-              <a
-                target="_blank"
-                href="https://portifolio-page-rafaeelricco.vercel.app/"
-                rel="noreferrer"
-              >
-                <CustomButton text="Veja meus trabalhos" />
-              </a>
-
-              <Tooltip content={'Em breve'}>
-                <CustomButton disabled={true} text="Canal do telegram" />
-              </Tooltip>
-              <Tooltip content={'Spotify ou Youtube Music?'}>
-                <CustomButton disabled={true} text="Playlist" />
-              </Tooltip>
-            </div> */}
             <CardsContainer>
               <CardProject
                 src={'/images/cover-vasconcelos.png'}
