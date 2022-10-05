@@ -1,15 +1,17 @@
 import Head from 'next/head'
 import Script from 'next/script'
-import CustomButton from '../components/atoms/Button'
-import { Container, Switch, Avatar, Text, Tooltip } from '@nextui-org/react'
+import styled from 'styled-components'
+import { Container, Switch, Avatar, Text } from '@nextui-org/react'
 import { SunIcon } from '../components/atoms/sunIcon'
 import { MoonIcon } from '../components/atoms/moonIcon'
 import useDarkMode from 'use-dark-mode'
-import { useTheme } from '@nextui-org/react'
 import { GitHub } from '../components/atoms/github'
 import { Instagram } from '../components/atoms/instagram'
 import { WhatsApp } from '../components/atoms/whatsapp'
 import { Linkdl } from '../components/atoms/linkdl'
+import { CardProject } from '../components/atoms/card'
+
+const CardsContainer = styled.div``
 
 export default function Home() {
   const darkMode = useDarkMode(false)
@@ -61,7 +63,7 @@ export default function Home() {
               Rafael Ricco
             </Text>
             <Text size={16} color="$gray500">
-              Designer | Desenvolvedor
+              Full Stack Developer | Designer
             </Text>
             <div className="icons">
               <a
@@ -106,11 +108,10 @@ export default function Home() {
                   margin: '0'
                 }}
               >
-                Se você chegou até aqui,provavelmente
-                <br /> está a procura de alguma das opções abaixo
+                Sinta-se a vontade para acessar meus projetos.
               </Text>
             </div>
-            <div className="buttons">
+            {/* <div className="buttons">
               <a target="_blank" href="http://wa.link/no53kg" rel="noreferrer">
                 <CustomButton text="Solicitar orçamento"></CustomButton>
               </a>
@@ -128,7 +129,40 @@ export default function Home() {
               <Tooltip content={'Spotify ou Youtube Music?'}>
                 <CustomButton disabled={true} text="Playlist" />
               </Tooltip>
-            </div>
+            </div> */}
+            <CardsContainer>
+              <CardProject
+                src={'/images/cover-vasconcelos.png'}
+                key={1}
+                href={'https://github.com/rafaeelricco/vasconcelos-agricola'}
+              />
+              <CardProject
+                src={'/images/bella-cover.png'}
+                alt={2}
+                key={'bella'}
+                href={'https://github.com/rafaeelricco/bella-vista-imoveis'}
+              />
+              <CardProject
+                src={'/images/vasconcelos-api.png'}
+                key={3}
+                href={'https://github.com/rafaeelricco/vasconcelos-api'}
+              />
+              <CardProject
+                src={'/images/django-cover.png'}
+                key={4}
+                href={'https://github.com/rafaeelricco/django-deploy'}
+              />
+              <CardProject
+                src={'/images/carrinho-de-compras.png'}
+                key={5}
+                href={'https://github.com/rafaeelricco/shopping-cart-vuejs'}
+              />
+              <CardProject
+                src={'/images/dr-tiago-m-souza.png'}
+                key={6}
+                href={'https://github.com/rafaeelricco/dr-tiago-nuxtjs'}
+              />
+            </CardsContainer>
           </div>
           <div className="copy">
             <Text
@@ -140,7 +174,7 @@ export default function Home() {
                 left: '0',
                 top: '0',
                 right: '0',
-                margin: '4rem 0 0 0'
+                margin: '4rem 0px 2rem 0px'
               }}
             >
               &copy; 2022, Rafael Ricco.
