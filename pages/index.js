@@ -1,15 +1,15 @@
+import { Avatar, Container, Switch, Text } from '@nextui-org/react'
 import Head from 'next/head'
 import Script from 'next/script'
 import styled from 'styled-components'
-import { Container, Switch, Avatar, Text } from '@nextui-org/react'
-import { SunIcon } from '../components/atoms/sunIcon'
-import { MoonIcon } from '../components/atoms/moonIcon'
 import useDarkMode from 'use-dark-mode'
+import { CardProject } from '../components/atoms/card'
 import { GitHub } from '../components/atoms/github'
 import { Instagram } from '../components/atoms/instagram'
-import { WhatsApp } from '../components/atoms/whatsapp'
 import { Linkdl } from '../components/atoms/linkdl'
-import { CardProject } from '../components/atoms/card'
+import { MoonIcon } from '../components/atoms/moonIcon'
+import { SunIcon } from '../components/atoms/sunIcon'
+import { WhatsApp } from '../components/atoms/whatsapp'
 
 const CardsContainer = styled.div``
 
@@ -107,7 +107,9 @@ export default function Home() {
                   margin: '0'
                 }}
               >
-                Sinta-se a vontade para acessar meus projetos.
+                Sinta-se a vontade para conhecer meus principais repositorios.
+                Neles você pode ver o projeto em produção e o código fonte da
+                aplicação.
               </Text>
             </div>
             <CardsContainer>
@@ -117,15 +119,25 @@ export default function Home() {
                 href={'https://github.com/rafaeelricco/vasconcelos-agricola'}
               />
               <CardProject
-                src={'/images/bella-cover.png'}
-                alt={2}
-                key={'bella'}
-                href={'https://github.com/rafaeelricco/bella-vista-imoveis'}
-              />
-              <CardProject
                 src={'/images/vasconcelos-api.png'}
                 key={3}
                 href={'https://github.com/rafaeelricco/vasconcelos-api'}
+              />
+              <CardProject
+                src={'/images/bella-cover.png'}
+                alt={2}
+                key={'bella'}
+                href={'https://github.com/rafaeelricco/bella-vista'}
+              />
+              <CardProject
+                src={'/images/pokedex.png'}
+                key={4}
+                href={'https://github.com/rafaeelricco/pokeapi-vuejs'}
+              />
+              <CardProject
+                src={'/images/carford.png'}
+                key={4}
+                href={'https://github.com/rafaeelricco/carford-system'}
               />
               <CardProject
                 src={'/images/django-cover.png'}
